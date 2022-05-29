@@ -2,24 +2,23 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
-let favoriteRestaurantMonica = new Set();
-favoriteRestaurantMonica.add("Bento");
-favoriteRestaurantMonica.add("Sushi");
-favoriteRestaurantMonica.add("Pancake");
-favoriteRestaurantMonica.add("Eggy");
-favoriteRestaurantMonica.add("Tempura");
-favoriteRestaurantMonica.add("Bento");
-favoriteRestaurantMonica.add("Eggy");
-favoriteRestaurantMonica.add("Padang");
-favoriteRestaurantMonica.add("Ttok");
-favoriteRestaurantMonica.add("Sushi");
-favoriteRestaurantMonica.add("Sushi");
+let favoriteRestaurantMonica = [
+  "Bento",
+  "Sushi",
+  "Pancake",
+  "Eggy",
+  "Tempura",
+  "Bento",
+  "Eggy",
+  "Padang",
+  "Tteok",
+  "Sushi",
+  "Sushi",
+];
+favoriteRestaurantMonica = [...new Set(favoriteRestaurantMonica)];
 
-let favoriteColorMonica = new Set();
-favoriteColorMonica.add("Yellow");
-favoriteColorMonica.add("Pink");
-favoriteColorMonica.add("White");
-favoriteColorMonica.add("Purple");
+let favoriteColorMonica = ["Yellow", "Pink", "White", "Purple"];
+favoriteColorMonica = [...new Set(favoriteColorMonica)];
 
 const eduMonica1 = {
   name: "SD 01",
@@ -52,21 +51,21 @@ const firstUser = {
   favoriteRestaurant: favoriteRestaurantMonica,
 };
 
-let favoriteRestaurantWendy = new Set();
-favoriteRestaurantWendy.add("Tempura");
-favoriteRestaurantWendy.add("Bento");
-favoriteRestaurantWendy.add("Sushi");
-favoriteRestaurantWendy.add("Pancake");
-favoriteRestaurantWendy.add("Padang");
-favoriteRestaurantWendy.add("Katsu");
-favoriteRestaurantWendy.add("Geprek");
-favoriteRestaurantWendy.add("Pancake");
-favoriteRestaurantWendy.add("Eggy");
+let favoriteRestaurantWendy = [
+  "Tempura",
+  "Bento",
+  "Sushi",
+  "Pancake",
+  "Padang",
+  "Katsu",
+  "Geprek",
+  "Pancake",
+  "Eggy",
+];
+favoriteRestaurantWendy = [...new Set(favoriteRestaurantWendy)];
 
-let favoriteColorWendy = new Set();
-favoriteColorWendy.add("Blue");
-favoriteColorWendy.add("Black");
-favoriteColorWendy.add("Grey");
+let favoriteColorWendy = ["Blue", "Black", "Grey"];
+favoriteColorWendy = [...new Set(favoriteColorWendy)];
 
 const eduWendy1 = {
   name: "SD 02",
@@ -100,8 +99,7 @@ const secondUser = {
   email: "wendy@dingdong.com",
   favoriteColor: favoriteColorWendy,
   isHavePet: "no",
-  education: eduWendy1,
-  eduWendy2,
+  education: educationWendy,
   favoriteRestaurant: favoriteRestaurantWendy,
 };
 
